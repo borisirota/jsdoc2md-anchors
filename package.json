@@ -1,0 +1,35 @@
+{
+  "name": "jsdoc2md-anchors",
+  "version": "0.0.1",
+  "description": "command line utility to adjust the jsdoc2md output anchors to be compatible with github and bitbucket",
+  "author": "Boris Sirota <borisirota@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/borisirota/jsdoc2md-anchors",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/borisirota/jsdoc2md-anchors.git"
+  },
+  "bugs": {
+    "url": "https://github.com/borisirota/jsdoc2md-anchors/issues"
+  },
+  "keywords": [
+    "jsdoc",
+    "markdown",
+    "jsdoc-to-markdown",
+    "jsdoc2md",
+    "anchor",
+    "anchors",
+    "github",
+    "bitbucket"
+  ],
+  "contributors": [
+    "Boris Sirota <borisirota@gmail.com>"
+  ],
+  "bin" : {
+    "jsdoc2md-anchors" : "bin/jsdoc2md-anchors.js"
+  },
+  "dependencies": {
+    "anchor-markdown-header": "^0.4.0",
+    "replacestream": "^1.0.2"
+  }
+}
