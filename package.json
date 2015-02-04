@@ -1,6 +1,6 @@
 {
   "name": "jsdoc2md-anchors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "command line utility to adjust the jsdoc2md output anchors to be compatible with github and bitbucket",
   "author": "Boris Sirota <borisirota@gmail.com>",
   "license": "MIT",
