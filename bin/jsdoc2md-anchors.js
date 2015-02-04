@@ -15,7 +15,7 @@ if (service === SERVICES[0]) {
     process.stdin
         //make the inner links (anchors) inside the readme to be compatible with bitbucket
         .pipe(replace(/\[(.+)\]\((#.+)\)/g, function (match) {
-            return anchor(match[1], 'github');
+            return anchor(match[1], 'github.com');
         }))
         .pipe(process.stdout);
 
