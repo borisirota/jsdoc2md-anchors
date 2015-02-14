@@ -30,7 +30,7 @@
   },
   "scripts": {
     "release": "npm version patch -m 'Bumped to %s'",
-    "postrelease": "git push && git push --tags"
+    "postrelease": "git push && git push --tags && npm publish"
   },
   "dependencies": {
     "anchor-markdown-header": "^0.4.0",
