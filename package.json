@@ -28,6 +28,10 @@
   "bin" : {
     "jsdoc2md-anchors" : "bin/jsdoc2md-anchors.js"
   },
+  "scripts": {
+    "release": "npm version patch -m 'Bumped to %s'",
+    "postrelease": "git push && git push --tags"
+  },
   "dependencies": {
     "anchor-markdown-header": "^0.4.0",
     "replacestream": "^1.0.2"
