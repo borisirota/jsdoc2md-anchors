@@ -15,7 +15,7 @@ if (service === SERVICES[0]) {
     process.stdin
         //make the inner links (anchors) inside the readme to be compatible with github
         .pipe(replace(/\[(.+)\]\((#.+)\)/g, function (match) {
-            return anchor(match[1], 'github.com').replace(/(\(#.+)~(.+\))/, '$1$2').replace(/(\(#.*)\$(.*\))/, '$1$2');
+            return anchor(match[1], 'github.com');
         }))
         .pipe(process.stdout);
 
@@ -30,7 +30,7 @@ if (service === SERVICES[0]) {
         }))
         //make the inner links (anchors) inside the readme to be compatible with bitbucket
         .pipe(replace(/\[(.+)\]\((#.+)\)/g, function (match) {
-            return anchor(match[1], 'bitbucket.org').replace(/(\(#.+)~(.+\))/, '$1$2').replace(/(\(#.*)\$(.*\))/, '$1$2');
+            return anchor(match[1], 'bitbucket.org');
         }))
         .pipe(process.stdout);
 
